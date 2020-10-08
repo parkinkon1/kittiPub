@@ -55,7 +55,9 @@ def makePointCloud2Msg(points, frame_time, parent_frame, pcd_format):
 if __name__ == '__main__':
 
     rospy.init_node('KittiPublisher')  # don't have blank (space) in the name
-    r = rospy.Rate(2)
+    # r = rospy.Rate(2)
+    r = rospy.Rate(20)
+
 
     bridge = CvBridge()
 
